@@ -30,7 +30,7 @@ export class MenucreditosComponent {
       children: [
         {
           displayName: 'DELTA21',
-          iconName: 'tune',
+          iconName: 'hard_drive_2',
           route: '/menucreditos/extr'
         },
       ]
@@ -38,17 +38,36 @@ export class MenucreditosComponent {
     {
       displayName: 'Parametrización',
       iconName: 'tune',
-      route: '/menucreditos/parametrizacion'
+      route: '/menucreditos/parametrizacion',
+      children: [
+        {
+          displayName: 'Tipos',
+          iconName: 'dataset',
+          route: '/menucreditos/extr'
+        },
+        {
+          displayName: 'Estados',
+          iconName: 'event_list',
+          route: '/menucreditos/extr'
+        },
+      ]
     },
     {
-      displayName: 'EXTERS',
-      iconName: 'extension',
-      route: '/menucreditos/extr'
-    },
-    {
-      displayName: 'Entidad',
-      iconName: 'business',
-      route: '/menucreditos/entidad'
+      displayName: 'Participes',
+      iconName: 'person',
+      route: '/menucreditos/parametrizacion',
+      children: [
+        {
+          displayName: 'Listado General',
+          iconName: 'article_person',
+          route: '/menucreditos/entidad'
+        },
+        {
+          displayName: 'Dash',
+          iconName: 'person_play',
+          route: '/menucreditos/extr'
+        },
+      ]
     },
     {
       displayName: 'Regresar',
