@@ -13,3 +13,11 @@
 
 // Pages
 @use 'pages/login';
+
+// Global icon configuration - Apply Material Symbols to all icon elements
+mat-icon,
+.material-icons,
+.material-icons-outlined,
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined' !important;
+}

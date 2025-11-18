@@ -24,6 +24,18 @@ export class MenucreditosComponent {
 
   navItems: NavItem[] = [
     {
+      displayName: 'Historicos',
+      iconName: 'database_search',
+      route: '/menucreditos/parametrizacion',
+      children: [
+        {
+          displayName: 'DELTA21',
+          iconName: 'tune',
+          route: '/menucreditos/extr'
+        },
+      ]
+    },
+    {
       displayName: 'Parametrización',
       iconName: 'tune',
       route: '/menucreditos/parametrizacion'
